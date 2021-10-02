@@ -114,3 +114,6 @@ set t_vb=
 " http://vim.wikia.com/wiki/All_folds_open_when_opening_a_file
 set foldlevelstart=20
 
+" Set Shell for ack.vim
+" https://github.com/mileszs/ack.vim/issues/169#issuecomment-166227728
+set shell=bash
