@@ -1,6 +1,7 @@
-NVim Configs
-------------
+# NeoVim Configs
 
-### Setup
+## Setup
 
-- Install vim-plug
+- run `setup.sh`
+- open vim `$nvim`
+- Install plugins `:PlugInstall`
