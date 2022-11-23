@@ -3,5 +3,5 @@
 ## Setup
 
 - run `setup.sh`
-- open vim `$nvim`
+- open vim `$ nvim`
 - Install plugins `:PlugInstall`
