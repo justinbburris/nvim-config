@@ -1,15 +1,50 @@
 call plug#begin('~/.config/nvim/vim-plug-plugins')
 
+
+"""""""""""""""" TYPEAHEAD/COMPLETION """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " https://github.com/neoclide/coc.nvim
 " Better autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 runtime! configs/plug_cfg/coc.vim
 
+" https://github.com/ervandew/supertab
+" tab completion
+Plug '/ervandew/supertab'
+runtime! configs/plug_cfg/supertab.vim
+
+"""""""""""""""" JAVASCRIPT/TYPESCRIPT """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " https://github.com/pangloss/vim-javascript
 " Better Javascript highlighting
 Plug 'pangloss/vim-javascript'
 runtime! configs/plug_cfg/javascript.vim
 
+" https://github.com/MaxMEllon/vim-jsx-pretty
+" JSX highlighting
+Plug 'maxmellon/vim-jsx-pretty'
+
+" https://github.com/leafgarland/typescript-vim
+" Typescript plugin for vim
+Plug 'leafgarland/typescript-vim'
+
+" https://github.com/posva/vim-vue
+" vue component syntax highlighting
+Plug 'posva/vim-vue'
+
+" https://github.com/groenewege/vim-less
+" less syntax highlighting
+Plug 'groenewege/vim-less'
+runtime! configs/plug_cfg/vim-less.vim
+
+" https://github.com/digitaltoad/vim-pug
+" pug template hightlighting
+Plug 'digitaltoad/vim-pug'
+runtime! configs/plug_cfg/vim-pug.vim
+
+" https://github.com/styled-components/vim-styled-components
+" Handle styles in components
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+
+"""""""""""""""" GENERAL HELPERS """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " https://github.com/tomtom/tcomment_vim
 " Better commenting
 Plug 'tomtom/tcomment_vim'
@@ -38,56 +73,51 @@ Plug 'tpope/vim-repeat'
 " lots of helper utilities for text manipulation
 Plug 'tpope/vim-abolish'
 
-" https://github.com/leafgarland/typescript-vim
-" Typescript plugin for vim
-Plug 'leafgarland/typescript-vim'
+" https://github.com/godlygeek/tabular
+" Text alignment
+Plug 'godlygeek/tabular'
+runtime! configs/plug_cfg/tabular.vim
 
-" https://github.com/MaxMEllon/vim-jsx-pretty
-" JSX highlighting
-Plug 'maxmellon/vim-jsx-pretty'
-
+"""""""""""""""" RUBY / RAILS """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " https://github.com/vim-ruby/vim-ruby
 " editing/compiling ruby in vim
 Plug 'vim-ruby/vim-ruby'
 
-" https://github.com/vim-airline/vim-airline
-" Status bar in vim
-Plug 'vim-airline/vim-airline'
-
-" https://github.com/ervandew/supertab
-" tab completion
-Plug '/ervandew/supertab'
-runtime! configs/plug_cfg/supertab.vim
-
-" https://github.com/ctrlpvim/ctrlp.vim
-" fuzzy file finding
-Plug 'ctrlpvim/ctrlp.vim'
-runtime! configs/plug_cfg/ctrlp.vim
+" https://github.com/tpope/vim-rails
+" rails integration
+Plug 'tpope/vim-rails'
+runtime! configs/plug_cfg/vim-rails.vim
 
 " https://github.com/slim-template/vim-slim
 " slim template syntax highlighting
 Plug 'slim-template/vim-slim'
 runtime! configs/plug_cfg/slim.vim
 
-" https://github.com/groenewege/vim-less
-" less syntax highlighting
-Plug 'groenewege/vim-less'
-runtime! configs/plug_cfg/vim-less.vim
-
 " https://github.com/mustache/vim-mustache-handlebars
 " mustache/hanldebars syntax hightlighting
 Plug 'mustache/vim-mustache-handlebars'
 runtime! configs/plug_cfg/vim-mustache-handlebars.vim
 
-" https://github.com/kchmck/vim-coffee-script
-" coffeescript syntax highlighting
-Plug 'kchmck/vim-coffee-script'
-runtime! configs/plug_cfg/vim-coffee-script.vim
+" https://github.com/vim-syntastic/syntastic
+" Error highlighting
+Plug 'vim-syntastic/syntastic'
+runtime! configs/plug_cfg/syntastic.vim
 
-" https://github.com/posva/vim-vue
-" vue component syntax highlighting
-Plug 'posva/vim-vue'
+" https://github.com/sjl/gundo.vim
+" undo tree visualization
+Plug 'sjl/gundo.vim'
 
+" https://github.com/tpope/vim-surround
+" add values to surround text
+Plug 'tpope/vim-surround'
+runtime! configs/plug_cfg/vim-surround.vim
+
+"""""""""""""""" INTERFACE """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" https://github.com/vim-airline/vim-airline
+" Status bar in vim
+Plug 'vim-airline/vim-airline'
+
+"""""""""""""""" SEARCH/BROWSE  """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " https://github.com/mileszs/ack.vim
 " ag searching in vim
 Plug 'mileszs/ack.vim'
@@ -102,38 +132,14 @@ runtime! configs/plug_cfg/nerdtree.vim
 " git integration for nerdtree
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
-" https://github.com/godlygeek/tabular
-" Text alignment
-Plug 'godlygeek/tabular'
-runtime! configs/plug_cfg/tabular.vim
+" https://github.com/ctrlpvim/ctrlp.vim
+" fuzzy file finding
+Plug 'ctrlpvim/ctrlp.vim'
+runtime! configs/plug_cfg/ctrlp.vim
 
-" https://github.com/vim-syntastic/syntastic
-" Error highlighting
-Plug 'vim-syntastic/syntastic'
-runtime! configs/plug_cfg/syntastic.vim
-
-" https://github.com/sjl/gundo.vim
-" undo tree visualization
-Plug 'sjl/gundo.vim'
-
-" https://github.com/tpope/vim-rails
-" rails integration
-Plug 'tpope/vim-rails'
-runtime! configs/plug_cfg/vim-rails.vim
-
-" https://github.com/tpope/vim-surround
-" add values to surround text
-Plug 'tpope/vim-surround'
-runtime! configs/plug_cfg/vim-surround.vim
-
-" https://github.com/digitaltoad/vim-pug
-" pug template hightlighting
-Plug 'digitaltoad/vim-pug'
-runtime! configs/plug_cfg/vim-pug.vim
-
+"""""""""""""""" RUST """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " https://github.com/rust-lang/rust.vim
 " RUST highlighting
 Plug 'rust-lang/rust.vim'
-
 
 call plug#end()
