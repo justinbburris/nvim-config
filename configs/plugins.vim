@@ -1,5 +1,10 @@
 call plug#begin('~/.config/nvim/vim-plug-plugins')
 
+" https://github.com/neoclide/coc.nvim
+" Better autocompletion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+runtime! configs/plug_cfg/coc.vim
+
 " https://github.com/pangloss/vim-javascript
 " Better Javascript highlighting
 Plug 'pangloss/vim-javascript'
@@ -32,6 +37,14 @@ Plug 'tpope/vim-repeat'
 " https://github.com/tpope/vim-abolish
 " lots of helper utilities for text manipulation
 Plug 'tpope/vim-abolish'
+
+" https://github.com/leafgarland/typescript-vim
+" Typescript plugin for vim
+Plug 'leafgarland/typescript-vim'
+
+" https://github.com/MaxMEllon/vim-jsx-pretty
+" JSX highlighting
+Plug 'maxmellon/vim-jsx-pretty'
 
 " https://github.com/vim-ruby/vim-ruby
 " editing/compiling ruby in vim
