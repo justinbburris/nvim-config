@@ -9,8 +9,8 @@ runtime! configs/plug_cfg/coc.vim
 
 " https://github.com/ervandew/supertab
 " tab completion
-Plug '/ervandew/supertab'
-runtime! configs/plug_cfg/supertab.vim
+" Plug '/ervandew/supertab'
+" runtime! configs/plug_cfg/supertab.vim
 
 """""""""""""""" JAVASCRIPT/TYPESCRIPT """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " https://github.com/pangloss/vim-javascript
@@ -116,6 +116,11 @@ runtime! configs/plug_cfg/vim-surround.vim
 " https://github.com/vim-airline/vim-airline
 " Status bar in vim
 Plug 'vim-airline/vim-airline'
+
+" https://github.com/vim-airline/vim-airline-themes#vim-airline-themes--
+Plug 'vim-airline/vim-airline-themes'
+runtime! configs/plug_cfg/vim-airline-themes.vim
+
 
 """""""""""""""" SEARCH/BROWSE  """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " https://github.com/mileszs/ack.vim

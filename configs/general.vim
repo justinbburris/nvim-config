@@ -17,8 +17,8 @@ set showmatch
 set scrolloff=4 sidescrolloff=10
 
 " use 2 spaces for tabs
-set expandtab tabstop=2 softtabstop=2 shiftwidth=2
-set smarttab
+set tabstop=2 softtabstop=2 shiftwidth=2
+set noexpandtab
 
 " enable line numbers, and don't make them any wider than necessary
 set number numberwidth=2
@@ -102,7 +102,7 @@ au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=ruby
 
 " JSON is JS
-au BufNewFile,BufRead *.json set ai filetype=javascript
+" au BufNewFile,BufRead *.json set ai filetype=javascript
 
 " 100 columns please
 set colorcolumn=100
@@ -117,3 +117,4 @@ set foldlevelstart=20
 " Set Shell for ack.vim
 " https://github.com/mileszs/ack.vim/issues/169#issuecomment-166227728
 set shell=bash
+set nolist
