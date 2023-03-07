@@ -46,6 +46,11 @@ runtime! configs/plug_cfg/json.vim
 
 """""""""""""""" GENERAL HELPERS """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" https://github.com/gcmt/taboo.vim
+" Better tab management
+Plug 'gcmt/taboo.vim'
+runtime! configs/plug_cfg/taboo.vim
+
 " https://github.com/tomtom/tcomment_vim
 " Better commenting
 Plug 'tomtom/tcomment_vim'
