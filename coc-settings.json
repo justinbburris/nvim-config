@@ -1,0 +1,6 @@
+{
+  "solargraph.useBundler": true,
+  "solargraph.shell": "zsh",
+  "solargraph.commandPath": "$HOME/.rbenv/shims/solargraph",
+  "solargraph.bundlerPath": "$HOME/.rbenv/shims/bundler"
+}
