@@ -35,16 +35,17 @@ Plug 'posva/vim-vue'
 Plug 'groenewege/vim-less'
 runtime! configs/plug_cfg/vim-less.vim
 
-" https://github.com/digitaltoad/vim-pug
-" pug template hightlighting
-Plug 'digitaltoad/vim-pug'
-runtime! configs/plug_cfg/vim-pug.vim
-
 " https://github.com/styled-components/vim-styled-components
 " Handle styles in components
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
+" https://github.com/elzr/vim-json
+" Better JSON file handling
+Plug 'elzr/vim-json'
+runtime! configs/plug_cfg/json.vim
+
 """""""""""""""" GENERAL HELPERS """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " https://github.com/tomtom/tcomment_vim
 " Better commenting
 Plug 'tomtom/tcomment_vim'
