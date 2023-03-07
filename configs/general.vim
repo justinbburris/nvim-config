@@ -61,11 +61,11 @@ set laststatus=2
 
 " augment status line
 function! ETry(function, ...)
-  if exists('*'.a:function)
-    return call(a:function, a:000)
-  else
-    return ''
-  endif
+	if exists('*'.a:function)
+		return call(a:function, a:000)
+	else
+		return ''
+	endif
 endfunction
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%{ETry('CapsLockStatusline')}%y%{ETry('rails#statusline')}%{ETry('fugitive#statusline')}%#ErrorMsg#%*%=%-16(\ %l,%c-%v\ %)%P
 
@@ -104,8 +104,8 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=r
 " JSON is JS
 " au BufNewFile,BufRead *.json set ai filetype=javascript
 
-" 100 columns please
-set colorcolumn=100
+" 120 columns please
+set colorcolumn=120
 
 " Turn off visual bells
 set t_vb=

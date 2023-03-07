@@ -112,16 +112,6 @@ Plug 'sjl/gundo.vim'
 Plug 'tpope/vim-surround'
 runtime! configs/plug_cfg/vim-surround.vim
 
-"""""""""""""""" INTERFACE """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" https://github.com/vim-airline/vim-airline
-" Status bar in vim
-Plug 'vim-airline/vim-airline'
-
-" https://github.com/vim-airline/vim-airline-themes#vim-airline-themes--
-Plug 'vim-airline/vim-airline-themes'
-runtime! configs/plug_cfg/vim-airline-themes.vim
-
-
 """""""""""""""" SEARCH/BROWSE  """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " https://github.com/mileszs/ack.vim
 " ag searching in vim
@@ -147,4 +137,14 @@ runtime! configs/plug_cfg/ctrlp.vim
 " RUST highlighting
 Plug 'rust-lang/rust.vim'
 
+"""""""""""""""" INTERFACE """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" https://github.com/nvim-lualine/lualine.nvim
+Plug 'nvim-lualine/lualine.nvim'
+" Lualine webicons
+Plug 'kyazdani42/nvim-web-devicons'
+
+"""""""""""""""" END OF PLUGINS """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#end()
+
+" Must be called after plug#end to function properly
+runtime! configs/lua/lualine.vim
