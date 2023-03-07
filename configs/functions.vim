@@ -15,7 +15,7 @@ command! StripTrailingWhitespaces call <SID>StripTrailingWhitespaces()
 
 " Open a new tab and change the working directoy
 function! <SID>OpenProject(path)
-	Texplore a:path
+	tabnew
 	if isdirectory(a:path)
     let dirname = a:path
   else
