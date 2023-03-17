@@ -1,5 +1,8 @@
 lua << END
 require('lualine').setup {
-	options = { theme = 'solarized' }
+	options = { 
+		theme = 'solarized',
+		extensions = {'nerdtree'}
+	}
 }
 END

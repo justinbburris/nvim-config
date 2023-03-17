@@ -1,7 +1,7 @@
 call plug#begin('~/.config/nvim/vim-plug-plugins')
 
 
-"""""""""""""""" TYPEAHEAD/COMPLETION """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""" TYPEAHEAD/LINTING """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " https://github.com/neoclide/coc.nvim
 " Better autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -11,6 +11,9 @@ runtime! configs/plug_cfg/coc.vim
 " tab completion
 " Plug '/ervandew/supertab'
 " runtime! configs/plug_cfg/supertab.vim
+
+" https://github.com/dense-analysis/ale
+" Plug 'dense-analysis/ale'
 
 """""""""""""""" JAVASCRIPT/TYPESCRIPT """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " https://github.com/pangloss/vim-javascript
