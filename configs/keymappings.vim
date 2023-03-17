@@ -46,3 +46,8 @@ map <Leader>I gg=G``<cr>
 " insert the path of currently edited file into a command
 " Command mode: Ctrl-P
 cmap <C-S-P> <C-R>=expand("%:p:h") . "/" <cr>
+
+" Open a new tab with a new lcd
+" nnoremap <leader>y :Texplore<CR>:lcd %:h<CR>
+
+" command! -nargs=* OpenProject :call Texplore(<q-args>)  \| call lcd(<q-args>)

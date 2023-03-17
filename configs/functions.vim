@@ -15,12 +15,13 @@ command! StripTrailingWhitespaces call <SID>StripTrailingWhitespaces()
 
 " Open a new tab and change the working directoy
 function! <SID>OpenProject(path)
-	tabnew
-	if isdirectory(a:path)
+  tabnew
+  if isdirectory(a:path)
     let dirname = a:path
   else
     let dirname = fnamemodify(a:path, ":h")
   endif
-	execute "lcd ". dirname
+  execute "lcd! ". dirname
 endfunction
+
 command! -nargs=1 -complete=file OpenProject :call <SID>OpenProject(<q-args>)
